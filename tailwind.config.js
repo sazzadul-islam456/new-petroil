@@ -6,8 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'primary':["Poppins", 'sans-serif',]
+      },
       maxWidth: {
-        'container': '1141px',
+        'container': '1140px',
       },
       backgroundImage: {
         'banner': "url('/src/assets/banner.png')",

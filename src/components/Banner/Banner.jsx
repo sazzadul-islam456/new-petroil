@@ -1,29 +1,21 @@
 import React from 'react';
 import banner from '../../assets/banner.png';
-import Container from '../Container/Container';
 
 const Banner = () => {
   return (
     <div
-      className="relative bg-cover bg-center bg-no-repeat min-h-screen"
-      style={{
-        backgroundImage: `url(${banner})`,
-      }}
+      style={{ backgroundImage: `url(${banner})` }}
+      className="bg-cover bg-no-repeat w-full py-[257px] relative font-primary"
     >
-      {/* Black Overlay */}
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-
-      {/* Content */}
-      <Container>
-        <div className="relative z-10 flex flex-col items-start justify-center h-full text-white space-y-4 pt-[257px] px-4">
-          <p className="text-left font-bold text-[64px] w-[390px] leading-tight">
-            We exist since 1975 <br /> in the oil and gas industry.
-          </p>
-          <button className="bg-red-500 text-white px-6 py-3 rounded-md hover:bg-red-600">
-            Learn More
-          </button>
-        </div>
-      </Container>
+      <div className="absolute inset-0 bg-[#00000099]" />
+      <div className="max-w-[1140px] mx-auto relative z-10">
+        <h1 className="max-w-[920px] text-white font-bold text-7xl mb-10">
+          We exist since 1975 in the oil and gas industry.
+        </h1>
+        <button className="bg-[#F40404] py-[13px] px-10 text-white font-semibold hover:bg-white hover:text-black hover:border-black">
+          LEARN MORE
+        </button>
+      </div>
     </div>
   );
 };
