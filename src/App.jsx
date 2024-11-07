@@ -9,6 +9,7 @@ import About from './components/About/About'
 import Card from './components/card/Card'
 import Map from './components/Map/Map'
 import Footer from './components/Footer/Footer'
+import Newnav from './components/Newnav/Newnav'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
       <Card />
       <Map />
       <Footer />
+      {/* <Newnav /> */}
     </div>
   )
 }
